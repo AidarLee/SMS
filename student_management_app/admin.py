@@ -6,7 +6,10 @@ from .models import CustomUser, AdminHOD, Staffs, Courses, Subjects, Students, A
 class UserModel(UserAdmin):
     pass
 
-
+admin.site.register(Staffs)
+admin.site.register(Courses)
+admin.site.register(Subjects)
+admin.site.register(Students)
 admin.site.register(CustomUser, UserModel)
 
 admin.site.register(AdminHOD)
